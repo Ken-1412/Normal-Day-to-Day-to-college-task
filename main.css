@@ -1,0 +1,10 @@
+*{
+    margin: 10;
+    padding: 10;
+}
+#first{
+    background-color: aquamarine;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: fantasy;
+}
