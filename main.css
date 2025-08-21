@@ -1,10 +1,88 @@
-*{
-    margin: 10;
-    padding: 10;
+/* Reset / base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-#first{
-    background-color: aquamarine;
-    font-size: xx-large;
-    font-weight: bolder;
+
+html, body {
+    height: 100%;
+background-image: url("https://media.istockphoto.com/id/516180836/photo/green-rice-fild-with-evening-sky.jpg?s=612x612&w=0&k=20&c=ctpEGZYCM8-ST1YuJR99vcOInfOnIo4ghZolX18EK8Y=");
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    background-color: bisque;
+    color: #111;
+    line-height: 1.4;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    background-image: url("https://images.alphacoders.com/135/1358310.png");
+    gap: 16px;
+    background: #6c63ff;
+    padding: 12px 20px;
+    align-items: center;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 32px 16px;
+}
+.hero h1 {
+    color: rgba(231, 212, 6, 0.9);
+    margin-bottom: 8px;
+}
+
+/* #first box (ID selector) */
+#first {
+    max-width: 1050px;
+    margin: 24px auto;
+    padding: 20px;
+    background-color: rgba(127, 255, 212, 0.25); /* light aquamarine tint */
     font-family: fantasy;
+    font-size: 1.25rem;
+    font-weight: 700;
+    border-radius: 8px;
+
+    /* background image */
+    background-image: url("https://t3.ftcdn.net/jpg/02/90/89/76/360_F_290897614_7RdAsk2GmumcGWZ2qklmV74hKlNmznSx.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* ensure text readable over image */
+    color: #000;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.6);
 }
+
+/* Lists */
+ul {
+    margin-top: 12px;
+    padding-left: 20px;
+}
+ul li {
+    margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 16px;
+    margin-top: 32px;
+    background: rgba(0,0,0,0.03);
+}
+
+/* Responsive tweaks */
+@media (max-width: 720px) {
+    #first {
+        padding: 16px;
+        font-size: 1rem;
+    }
+    nav {
+        flex-wrap: wrap;
